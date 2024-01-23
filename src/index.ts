@@ -3,4 +3,5 @@ export function hello(name : string) : string {
     return 'Hello ' + name; 
 }
 let greets = hello('vijay');
+
 console.log(greets);
