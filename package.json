@@ -1,0 +1,31 @@
+{
+  "name": "typescript-esbuild-debug-vscode",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tsc",
+    "build": "esbuild src/index.ts --bundle --platform=node --format=esm --sourcemap --outdir=dist",
+
+    "dev": "run-p dev:*",
+    "dev:tsc": "tsc --watch --preserveWatchOutput",
+    "dev:node": "node --watch dist/index.js",
+    "dev:esbuild": "pnpm run build --watch",
+
+    "debug": "run-p debug:*",
+    "debug:tsc": "tsc --preserveWatchOutput",    
+    "debug:esbuild": "npm run build"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "esbuild": "^0.19.11",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.3.3"
+  }
+}

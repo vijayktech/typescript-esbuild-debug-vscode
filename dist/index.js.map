@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/index.ts"],
+  "sourcesContent": ["export function hello(name : string) : string {\r\n    console.log(\"Welcome to ESBuild !\");\r\n    return 'Hello ' + name; \r\n}\r\nlet greets = hello('vijay');\r\nconsole.log(greets);"],
+  "mappings": ";AAAO,SAAS,MAAM,MAAwB;AAC1C,UAAQ,IAAI,sBAAsB;AAClC,SAAO,WAAW;AACtB;AACA,IAAI,SAAS,MAAM,OAAO;AAC1B,QAAQ,IAAI,MAAM;",
+  "names": []
+}
